@@ -2,10 +2,10 @@ let askAgain = true
 do {
   let valorTotal = prompt("Ingrese el valor total de la compra:")
   let cuotas = prompt("Ingrese el numero de cuotas, las disponibles son 3, 6, 9 y 12:")
-  let cuota1 = "3"
-  let cuota2 = "6"
-  let cuota3 = "9"
-  let cuota4 = "12"
+  let cuotaUno = "3"
+  let cuotaDos = "6"
+  let cuotaTres = "9"
+  let cuotaCuatro = "12"
 
   let valorCuotas = 0
   if (isNaN(valorTotal) == true || valorTotal == "") {
@@ -13,7 +13,7 @@ do {
   } else if (isNaN(cuotas) == true || cuotas == "") {
     alert("Los datos ingresados son incorrectos, vuelva a ingresar los datos.")
   } else if (
-    cuotas !== cuota1 && cuotas !== cuota2 && cuotas !== cuota3 && cuotas !== cuota4) {
+    cuotas !== cuotaUno && cuotas !== cuotaDos && cuotas !== cuotaTres && cuotas !== cuotaCuatro) {
     alert("Cuota no disponible")
   } else {
     valorCuotas = valorTotal / cuotas
